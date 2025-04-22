@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: flex;
   width: 100%;
   height: 48px;
@@ -12,4 +12,87 @@
   box-sizing: border-box;
   color: rgba(255, 255, 255, .8);
   align-items: center;
+  position: fixed;
+  z-index: 100;
+} */
+.header {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(22, 22, 23, 0.8);
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, .8);
+  position: fixed;
+  z-index: 100;
+  justify-content: space-between;
+  padding: 0 10px;
+  transition: height 0.3s ease-in-out;
 }
+.nav {
+  display: none;
+} 
+.nav > div {
+  cursor: pointer;
+}
+.sec-1-apple-logo {
+  transform: scale(1);
+}
+.right-section {  
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}
+.header-clicked {
+  flex-direction: column;
+  background-color: rgba(22, 22, 23);
+  padding: 10px 15px 0 50px;
+  justify-content: start;
+  overflow: auto;
+  max-height: 700px;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+  height: 100vh;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+.nav-clicked {
+  display: flex;
+  flex-direction: column;
+}
+.nav-clicked > div {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 833px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+  }
+  .header {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    justify-content: center;
+  }
+  .hamburger-btn {
+    display: none;
+  }
+  .right-section {
+    width: 70px;
+    
+  }
+
+}
+

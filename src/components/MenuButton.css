@@ -1,0 +1,9 @@
+.hamburger-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.hamburger-btn .hamburger-img{
+  width: 20px;
+  height: 20px;
+}
