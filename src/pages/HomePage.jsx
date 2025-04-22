@@ -44,13 +44,21 @@ export default function HomePage() {
               <Button className="buy-btn">Buy</Button>
             </div>
           </div>
-          <div className='image-container' >
-          </div>
       </div>
 
 
       {/* section 3 */}
-      
+      <div className='section-3'>
+          <h2 className='iphone-header'>iPhone</h2>
+          <p className='par-meet'>Meet the iPhone 16 family.</p>
+          <div className="button-container">
+            <div className='buttons'>
+              <Button className="learn-btn">Learn more</Button>
+              <Button className="buy-btn">Shop iPhone</Button>
+            </div>
+          </div>
+          <p className='par-built'>Built for Apple Intelligence</p>
+      </div>
     </div>
   )
 }
