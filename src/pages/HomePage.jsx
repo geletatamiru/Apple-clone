@@ -2,6 +2,7 @@ import React from 'react'
 import macbook from "../assets/macbook.jpg";
 import Button from '../components/Button';
 import AppleLogo from '../components/AppleLogo';
+import CardContainer from '../components/CardContainer';
 import "./HomePage.css";
 
 export default function HomePage() {
@@ -59,6 +60,9 @@ export default function HomePage() {
           </div>
           <p className='par-built'>Built for Apple Intelligence</p>
       </div>
+
+      {/* cards */}
+       <CardContainer /> 
     </div>
   )
 }
