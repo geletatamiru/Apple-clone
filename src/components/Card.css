@@ -4,6 +4,12 @@
   margin-top: 15px;
   padding-bottom: 50px;
   width: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: 734px 500px;
+  background-position: center;
+  background-color: #fff;
+  border-color: #fff;
 }
 .card h2 {
   padding-top: 30px;
@@ -42,70 +48,19 @@ button {
 .learn-btn, .buy-btn {
   margin-top: 20px;
 }
-.card.card1 {
-  background: url("/card-images/image1.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 734px 500px;
-  background-position: center;
-  background-color: #fff;
-  border-color: #fff;
-}
 .card.card2 {
-  background: url("/card-images/image2.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 734px 500px;
-  background-position: center;
-  background-color: #fff;
-  border-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
 }
-.card.card3 {
-  background: url("/card-images/image3.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 734px 500px;
-  background-position: center;
-  background-color: #fff;
-  border-color: #fff;
-}
 .card3 h2 { margin-top: 0;}
-.card.card4 {
-  background: url("/card-images/image4.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 734px 500px;
-  background-position: center;
-  background-color: #fff;
-  border-color: #fff;
-}
 .card.card5 {
-  background: url("/card-images/image5.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 734px 500px;
-  background-position: center;
-  background-color: #fff;
-  border-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   color: white;
-  
-}
-.card.card6 {
-  background: url("/card-images/image6.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 734px 500px;
-  background-position: center;
-  background-color: #fff;
-  border-color: #fff;
 }
 @media (min-width: 734px) {
   .card {

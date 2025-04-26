@@ -16,6 +16,7 @@ const CardContainer = () => {
             p2={item.p2}
             btn1={item.btn1}
             btn2={item.btn2}
+            url={`url(/card-images/image${item.id}.jpg)`}
           />
         })
       }

@@ -2,7 +2,10 @@ import Button from "./Button"
 import "./Card.css";
 const Card = (props) => {
   return (
-    <div className={`card ${props.className}`}>
+    <div 
+      className={`card ${props.className}`}
+      style={{backgroundImage: `${props.url}`}}
+    >
       <h2>{props.h2}</h2>
       <p>{props.p1}</p>
       {

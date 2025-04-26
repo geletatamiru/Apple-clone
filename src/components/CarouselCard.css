@@ -1,5 +1,5 @@
 .carousel-card {
-  min-width: 70%;
+  min-width: 60%;
   height: 550px;
   background: #eee;
   display: flex;
@@ -10,6 +10,20 @@
   border-right: 1px solid #ccc;
   color: white;
   position: relative;
+  opacity: 0.3;
+  transition: opacity 0.5s ease-in-out;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33338;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.carousel-card.active {
+  opacity: 1;
 }
 .overlay {
   position: absolute;
@@ -17,96 +31,51 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.2); /* <-- black transparent overlay */
+  background: rgba(0,0,0,0.3); /* <-- black transparent overlay */
   z-index: 1;
 }
 .texts {
-  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+}
+.carousel-card.active > .texts {
+  transform: translateY(0%);
   margin-bottom: 30px;
 }
+.texts > .p1 {
+  font-weight: 700;
+}
+.texts > p {
+  margin: 0;
+}
 .texts .carousel-btn {
+  margin-top: 10px;
   border: none;
   background-color: white;
 }
 
-.carousel-card.carousel1 {
-  background: url("/carousel-small/carousel1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
+@media (min-width: 734px) {
+  .carousel-card {
+    font-size: 17px;
+    align-items: start;
+  }
+  .texts {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    bottom: 30px;
+    padding-left: 60px;
+  }
+  .carousel-btn {
+    position: absolute;
+    left: 0;
+  }
+  
 }
-.carousel-card.carousel2 {
-  background: url("/carousel-small/carousel2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel3 {
-  background: url("/carousel-small/carousel3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel4 {
-  background: url("/carousel-small/carousel4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel5 {
-  background: url("/carousel-small/carousel5.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel6 {
-  background: url("/carousel-small/carousel6.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel7 {
-  background: url("/carousel-small/carousel7.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel8 {
-  background: url("/carousel-small/carousel8.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel9 {
-  background: url("/carousel-small/carousel9.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
-.carousel-card.carousel10 {
-  background: url("/carousel-small/carousel10.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  border-color: #fff;
-}
+

@@ -34,28 +34,31 @@ const Carousel = () => {
       return () => clearTimeout(timeout);
     }
   }, [transition]);
-
+  console.log(Items);
+  
   return (
     <div className="carousel">
       <div 
       className='slides'
       onTransitionEnd={handleTransitionEnd}
       style={{
-        transform: `translateX(-${index * 70}%)`,
+        transform: `translateX(-${index * 60}%)`,
         transition: transition ? "transform 0.5s ease-in-out" : "none",
       }}
       >
         {
-          Items.map((item,i) => (
+          Items.map((item, i) => (      
             <CarouselCard
-            key={`${item.id}-${i}`}
-              className={item.className} 
+              key={`${item.id}-${i}`}
+              className={`${item.className} ${i === index ? 'active' : ''}`} // add 'active' class if current
               p1={item.p1}
               p2={item.p2}
               btn={item.btn}
+              urlMobile={`url(/carousel-small/carousel${item.id}.jpg)`}
+              urlDesktop={`url(/carousel-big/carousel-big${item.id}.jpg)`}
             />
           ))
-        }
+      }
       </div>
       <div className='arrows'>
         <button onClick={handlePrev} className='left-btn'>⬅️</button>

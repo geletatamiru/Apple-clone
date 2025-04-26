@@ -1,6 +1,6 @@
 const items = [
   {id: "1",className: "carousel1",p1: "Drama", p2: "Live your best lie.", btn: "Stream now"},
-  {id: "2",className: "carousel2",p1: "Cpmedy", p2: "Seth Rogen dives into the wild chaos of Hollywood in this all-star satire.", btn: "Stream now"},
+  {id: "2",className: "carousel2",p1: "Comedy", p2: "Seth Rogen dives into the wild chaos of Hollywood in this all-star satire.", btn: "Stream now"},
   {id: "3",className: "carousel3",p1: "Comedy", p2: "A second chance is never simple.", btn: "Stream now"},
   {id: "4",className: "carousel4",p1: "Thriller", p2: "There's more to work than life.", btn: "Stream now"},
   {id: "5",className: "carousel5",p2: "Watch every club, every match, live--all season long.", btn: "See the schedule"},
