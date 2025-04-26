@@ -7,7 +7,7 @@
 .slides {
   display: flex;
   position: relative;
-  left: 25%;
+  left: 15%;
 }
 
 .arrows {
@@ -18,9 +18,9 @@
 }
 .arrows .left-btn {
   position: absolute;
-  left: 10%;
+  left: 5%;
 }
 .arrows .right-btn {
   position: absolute;
-  right: 10%;
+  right: 5%;
 }

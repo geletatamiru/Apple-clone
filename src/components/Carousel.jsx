@@ -41,7 +41,7 @@ const Carousel = () => {
       className='slides'
       onTransitionEnd={handleTransitionEnd}
       style={{
-        transform: `translateX(-${index * 50}%)`,
+        transform: `translateX(-${index * 70}%)`,
         transition: transition ? "transform 0.5s ease-in-out" : "none",
       }}
       >
