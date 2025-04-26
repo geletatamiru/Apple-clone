@@ -34,7 +34,13 @@ const Carousel = () => {
       return () => clearTimeout(timeout);
     }
   }, [transition]);
-  console.log(Items);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 5000); // change every 3 seconds
+
+    return () => clearInterval(interval); // clean up when component unmounts
+  }, []);
   
   return (
     <div className="carousel">
@@ -43,7 +49,7 @@ const Carousel = () => {
       onTransitionEnd={handleTransitionEnd}
       style={{
         transform: `translateX(-${index * 60}%)`,
-        transition: transition ? "transform 0.5s ease-in-out" : "none",
+        transition: transition ? "transform 0.7s ease-in-out" : "none",
       }}
       >
         {
