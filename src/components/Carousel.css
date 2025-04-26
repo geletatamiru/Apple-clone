@@ -1,0 +1,26 @@
+.carousel {
+  width: 100%;
+  border: 2px solid #333;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  position: relative;
+  left: 25%;
+}
+
+.arrows {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrows .left-btn {
+  position: absolute;
+  left: 10%;
+}
+.arrows .right-btn {
+  position: absolute;
+  right: 10%;
+}

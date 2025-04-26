@@ -3,6 +3,7 @@ import macbook from "../assets/macbook.jpg";
 import Button from '../components/Button';
 import AppleLogo from '../components/AppleLogo';
 import CardContainer from '../components/CardContainer';
+import Carausel from '../components/Carousel';
 import "./HomePage.css";
 
 export default function HomePage() {
@@ -63,6 +64,8 @@ export default function HomePage() {
 
       {/* cards */}
        <CardContainer /> 
+       {/* carousel */}
+       <Carausel />
     </div>
   )
 }

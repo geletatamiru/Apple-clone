@@ -1,0 +1,112 @@
+.carousel-card {
+  min-width: 50%;
+  height: 550px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-size: 1rem;
+  border-right: 1px solid #ccc;
+  color: white;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2); /* <-- black transparent overlay */
+  z-index: 1;
+}
+.texts {
+  text-align: center;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+.texts .carousel-btn {
+  border: none;
+  background-color: white;
+}
+
+.carousel-card.carousel1 {
+  background: url("/carousel-small/carousel1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel2 {
+  background: url("/carousel-small/carousel2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel3 {
+  background: url("/carousel-small/carousel3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel4 {
+  background: url("/carousel-small/carousel4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel5 {
+  background: url("/carousel-small/carousel5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel6 {
+  background: url("/carousel-small/carousel6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel7 {
+  background: url("/carousel-small/carousel7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel8 {
+  background: url("/carousel-small/carousel8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel9 {
+  background: url("/carousel-small/carousel9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
+.carousel-card.carousel10 {
+  background: url("/carousel-small/carousel10.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-color: #fff;
+}
