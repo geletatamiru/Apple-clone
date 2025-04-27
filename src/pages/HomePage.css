@@ -195,7 +195,7 @@
 }
 @media (min-width: 734px){
   .section-3 {
-    background: url('./big-iphone.jpg');
+    background: url('/big-iphone.jpg');
     background-size: cover;
     height: 600px;
   }
