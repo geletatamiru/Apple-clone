@@ -1,0 +1,15 @@
+.discription {
+  padding:  30px 4%;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background-color: rgb(245, 245, 247);
+  color: rgba(0, 0, 0, 0.56);
+}
+@media (min-width: 700px){
+  .discription {
+    padding: 30px 10%;
+  }
+}

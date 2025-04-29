@@ -4,6 +4,8 @@ import Button from '../components/Button';
 import AppleLogo from '../components/AppleLogo';
 import CardContainer from '../components/CardContainer';
 import Carausel from '../components/Carousel';
+import MovingCard from '../components/MovingCard';
+import Description from '../components/Description';
 import "./HomePage.css";
 
 export default function HomePage() {
@@ -66,6 +68,10 @@ export default function HomePage() {
        <CardContainer /> 
        {/* carousel */}
        <Carausel />
+       {/* Moving Card */}
+       <MovingCard />
+       {/* Description section */}
+       <Description />
     </div>
   )
 }
