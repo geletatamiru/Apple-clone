@@ -8,6 +8,9 @@
   display: inline-flex;
   animation: scroll 30s linear infinite;
 }
+.paused {
+  animation-play-state: paused !important;
+}
 .item {
   min-width: 230px;
   height: 180px;

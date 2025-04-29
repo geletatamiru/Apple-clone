@@ -5,8 +5,8 @@ import "./Carousel.css";
 const Carousel = () => {
   const [index, setIndex] = useState(1);
   const [transition, setTransition] = useState(true);
-  const [isVisible, setIsVisible] = useState(true); // 🆕 new visibility state
-  const carouselRef = useRef(null); // 🆕 to observe this DOM element
+  const [isVisible, setIsVisible] = useState(true); 
+  const carouselRef = useRef(null);
 
   const Items = [
     items[items.length - 1],
@@ -22,11 +22,11 @@ const Carousel = () => {
   };
   const handleTransitionEnd = () => {
     if (index === Items.length - 1) {
-      // Reached fake first, jump to real first
+    
       setTransition(false);
       setIndex(1);
     } else if (index === 0) {
-      // Reached fake last, jump to real last
+      
       setTransition(false);
       setIndex(Items.length - 2);
     }
@@ -41,16 +41,16 @@ const Carousel = () => {
     if (!isVisible) return; 
     const interval = setInterval(() => {
       handleNext();
-    }, 5000); // change every 3 seconds
+    }, 4000);
 
-    return () => clearInterval(interval); // clean up when component unmounts
+    return () => clearInterval(interval);
   }, [isVisible]);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.5 } // 50% of carousel must be visible
+      { threshold: 0.5 } 
     );
 
     if (carouselRef.current) {
@@ -77,7 +77,7 @@ const Carousel = () => {
           Items.map((item, i) => (      
             <CarouselCard
               key={`${item.id}-${i}`}
-              className={`${item.className} ${i === index ? 'active' : ''}`} // add 'active' class if current
+              className={`${item.className} ${i === index ? 'active' : ''}`} 
               p1={item.p1}
               p2={item.p2}
               btn={item.btn}
